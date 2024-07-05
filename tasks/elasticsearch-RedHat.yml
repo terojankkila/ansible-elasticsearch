@@ -25,8 +25,8 @@
     state: absent
   when: es_use_repository
 
-- name: RedHat - include versionlock
-  include_tasks: elasticsearch-RedHat-version-lock.yml
+#- name: RedHat - include versionlock
+#  include_tasks: elasticsearch-RedHat-version-lock.yml
 
 - name: RedHat - Remove the other elasticsearch package if switching between OSS and standard
   become: yes
